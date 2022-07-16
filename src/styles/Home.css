@@ -1,0 +1,169 @@
+body {
+    font-size: 15px;
+    background-color: #02042b;
+}
+
+form {
+    margin-bottom: 5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    font-family: inherit;
+    font-size: 1.5rem;
+    outline: none;
+    background-color: transparent;
+    padding: 1.25rem 1rem;
+    color: slateblue;
+    border: 0.1rem solid slategrey;
+    margin-right: 1rem;
+    border-radius: 0.625rem;
+}
+
+input::placeholder {
+    color: slategray;
+}
+
+button {
+    font-family: inherit;
+    font-size: 1.5rem;
+    outline: none;
+    background-color: #fff;
+    padding: 1.25rem 1rem;
+    border: 0.1rem solid slategrey;
+    border-radius: 0.625rem;
+    transition: all 0.15s ease-in-out;
+
+}
+
+button:hover {
+    background-color: transparent;
+    color: slategrey;
+    cursor: pointer;
+}
+
+.category {
+    color: slategrey;
+    margin-bottom: 1rem;
+}
+
+.category span {
+    color: #a3b4c4;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+.section {
+    padding: 1.25rem;
+}
+
+.section .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.section .cards div {
+    background-color: #19243e;
+    padding: 1rem;
+    border-radius: 0.625rem;
+    box-shadow: 3px 3px #2b84ea;
+    cursor: pointer;
+}
+
+.section .cards div:hover {
+    box-shadow: 0px 3px 15px #2b84ea;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.section .cards div h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.section .cards div ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.section .cards div ul li {
+    color: slategrey;
+}
+
+.section .cards div ul li a {
+    color: slategrey;
+    text-decoration: underline;
+}
+
+.section .cards div ul li a:hover {
+    color: #fff;
+}
+
+.section .cards div p {
+    color: slategrey;
+}
+
+@media (min-width:768px) {
+    .section .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1024px) {
+
+    form {
+        display: flex;
+        align-items: center;
+    }
+
+    input {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 2rem;
+    }
+
+    .section {
+        max-width: 992px;
+        margin: auto;
+    }
+
+}
+
+
+
+.spinner {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -48%);
+    border: 0.2rem solid #c6c6c6;
+    border-top: 0.2rem solid #2b84ea;
+    border-radius: 50%;
+    animation: spin 1s infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

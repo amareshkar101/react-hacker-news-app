@@ -1,0 +1,102 @@
+body {
+    font-size: 15px;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    color: #2b84ea;
+
+}
+
+.btn1 {
+    font-family: inherit;
+    font-size: 1.5rem;
+    outline: none;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border: 0.1rem solid white;
+    border-radius: 0.625rem;
+    transition: all 0.15s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.btn1:hover {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.section-post {
+    width: 100%;
+    padding: 6rem;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-post .cards div {
+    background-color: #19243e;
+    /* background-color: 
+#b3b3bf; */
+    padding: 1rem;
+    border-radius: 0.625rem;
+    box-shadow: 3px 3px #2b84ea;
+}
+
+.section-post .cards div h2 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 30px;
+}
+
+.section-post .cards div ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.section-post .cards div ul li {
+    color: slategrey;
+}
+
+.section-post .cards div ul li a {
+    color: slategrey;
+    text-decoration: none;
+}
+
+.section-post .cards div ul li a:hover {
+    color: #fff;
+}
+
+.section-post .cards div p {
+    color: slategrey;
+}
+
+.spinner {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -48%);
+    border: 0.2rem solid #c6c6c6;
+    border-top: 0.2rem solid #2b84ea;
+    border-radius: 50%;
+    animation: spin 1s infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
